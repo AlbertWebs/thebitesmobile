@@ -1,3 +1,9 @@
+
+
+
+
+@if ($browser->isMobile())
+
 @extends('mobile.master-profile')
 
 @section('content')
@@ -69,3 +75,11 @@
 
 @include('mobile.main-nav')
 @endsection
+
+
+@else
+   @include('shaqshouse.index')
+@endif
+
+
+

@@ -1,6 +1,6 @@
 
 
-
+@if ($browser->isMobile())
 
     @extends('mobile.master-landing')
 
@@ -37,4 +37,5 @@
 @else
    @include('shaqshouse.index')
 @endif
+
 

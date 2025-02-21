@@ -1,3 +1,8 @@
+
+
+
+@if ($browser->isMobile())
+
 @extends('mobile.master-sign')
 
 @section('content')
@@ -65,3 +70,12 @@ $( document ).ready(function() {
 });
 </script>
 @endsection
+
+@else
+   @include('shaqshouse.index')
+@endif
+
+
+
+
+
