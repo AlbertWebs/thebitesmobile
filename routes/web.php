@@ -16,7 +16,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['prefix'=>'mobile'], function(){
     Route::get('/', [App\Http\Controllers\MobileController::class, 'index'])->name('index.mobile');
-    Route::get('/mobile/get-started', [App\Http\Controllers\MobileController::class, 'index'])->name('get-started');
+    Route::get('/get-started', [App\Http\Controllers\MobileController::class, 'index'])->name('get-started');
     Route::get('/search', [App\Http\Controllers\MobileController::class, 'search'])->name('search');
     Route::post('/search-post', [App\Http\Controllers\MobileController::class, 'search_post'])->name('search_post');
 });
