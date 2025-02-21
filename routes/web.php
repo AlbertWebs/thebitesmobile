@@ -13,3 +13,4 @@ Route::get('/menu', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/mobile/get-started', [App\Http\Controllers\MobileController::class, 'index'])->name('get-started');
