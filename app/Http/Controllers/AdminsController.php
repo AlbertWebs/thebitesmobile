@@ -466,7 +466,7 @@ class AdminsController extends Controller
                     $file = $request->file('image');
                     $filename = str_replace(' ', '', $file->getClientOriginalName());
                     $timestamp = new Datetime();
-                    $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                    $new_timestamp = $timestamp->format('Y-m-d');
                     $image_main_temp = $new_timestamp.'image'.$filename;
                     $image = str_replace(' ', '',$image_main_temp);
                     $file->move($path, $image);
@@ -502,7 +502,7 @@ class AdminsController extends Controller
                     $file = $request->file('image');
                     $filename = str_replace(' ', '', $file->getClientOriginalName());
                     $timestamp = new Datetime();
-                    $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                    $new_timestamp = $timestamp->format('Y-m-d');
                     $image_main_temp = $new_timestamp.'image'.$filename;
                     $image = str_replace(' ', '',$image_main_temp);
                     $file->move($path, $image);
@@ -703,7 +703,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_one');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_one = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_one);
@@ -723,7 +723,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_two');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_two = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_two);
@@ -744,7 +744,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_three');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_three = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_three);
@@ -765,7 +765,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_four');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_four = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_four);
@@ -787,7 +787,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_five');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_five = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_five);
@@ -861,7 +861,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_one');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_one = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_one);
@@ -881,7 +881,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_two');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_two = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_two);
@@ -902,7 +902,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_three');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_three = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_three);
@@ -923,7 +923,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_four');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_four = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_four);
@@ -945,7 +945,7 @@ class AdminsController extends Controller
                 $file = $request->file('image_five');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
-                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $new_timestamp = $timestamp->format('Y-m-d');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_five = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_five);
@@ -1126,7 +1126,7 @@ public function add_Product(Request $request){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -1141,7 +1141,7 @@ public function add_Product(Request $request){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -1162,7 +1162,7 @@ public function add_Product(Request $request){
     //         $file = $request->file('image_three');
     //         $filename = str_replace(' ', '', $file->getClientOriginalName());
     //         $timestamp = new Datetime();
-    //         $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+    //         $new_timestamp = $timestamp->format('Y-m-d');
     //         $image_main_temp = $new_timestamp.'image'.$filename;
     //         $image_three = str_replace(' ', '',$image_main_temp);
     //         $file->move($path, $image_three);
@@ -1308,7 +1308,7 @@ public function edit_Product(Request $request, $id){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -1323,7 +1323,7 @@ public function edit_Product(Request $request, $id){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -1338,7 +1338,7 @@ public function edit_Product(Request $request, $id){
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_three = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_three);
@@ -1390,7 +1390,7 @@ public function add_Service(Request $request){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -1410,7 +1410,7 @@ public function add_Service(Request $request){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -1431,7 +1431,7 @@ public function add_Service(Request $request){
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_three = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_three);
@@ -1481,7 +1481,7 @@ public function edit_Services(Request $request, $id){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -1501,7 +1501,7 @@ public function edit_Services(Request $request, $id){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -1522,7 +1522,7 @@ public function edit_Services(Request $request, $id){
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_three = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_three);
@@ -1572,7 +1572,7 @@ public function add_Portfolio(Request $request){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -1592,7 +1592,7 @@ public function add_Portfolio(Request $request){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -1613,7 +1613,7 @@ public function add_Portfolio(Request $request){
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_three = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_three);
@@ -1634,7 +1634,7 @@ public function add_Portfolio(Request $request){
             $file = $request->file('image_four');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_four = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_four);
@@ -1656,7 +1656,7 @@ public function add_Portfolio(Request $request){
             $file = $request->file('image_five');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_five = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_five);
@@ -1711,7 +1711,7 @@ public function edit_Portfolio(Request $request, $id){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -1731,7 +1731,7 @@ public function edit_Portfolio(Request $request, $id){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -1752,7 +1752,7 @@ public function edit_Portfolio(Request $request, $id){
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_three = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_three);
@@ -1773,7 +1773,7 @@ public function edit_Portfolio(Request $request, $id){
             $file = $request->file('image_four');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_four = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_four);
@@ -1795,7 +1795,7 @@ public function edit_Portfolio(Request $request, $id){
             $file = $request->file('image_five');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_five = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_five);
@@ -1977,7 +1977,7 @@ public function add_Testimonial(Request $request){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -2035,7 +2035,7 @@ public function edit_Testimonial(Request $request, $id){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -2192,7 +2192,7 @@ public function add_Blog(Request $request){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -2212,7 +2212,7 @@ public function add_Blog(Request $request){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -2233,7 +2233,7 @@ public function add_Blog(Request $request){
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_three = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_three);
@@ -2254,7 +2254,7 @@ public function add_Blog(Request $request){
             $file = $request->file('image_four');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_four = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_four);
@@ -2312,7 +2312,7 @@ public function edit_Blog(Request $request, $id){
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_one = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_one);
@@ -2332,7 +2332,7 @@ public function edit_Blog(Request $request, $id){
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_two = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_two);
@@ -2353,7 +2353,7 @@ public function edit_Blog(Request $request, $id){
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_three = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_three);
@@ -2374,7 +2374,7 @@ public function edit_Blog(Request $request, $id){
             $file = $request->file('image_four');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
-            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $new_timestamp = $timestamp->format('Y-m-d');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image_four = str_replace(' ', '',$image_main_temp);
             $file->move($path, $image_four);
