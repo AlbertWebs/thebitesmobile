@@ -191,8 +191,9 @@ Version: 1.0
                  var host = window.location.protocol + "//" + window.location.host + "/mobile/get-started";
                  if(data['message'] == "Success"){
                     window.location.replace(host);
+                    alert('Success');
                  }else{
-                    alert('Wrong Username or Password');
+                    alert('MoreSuccess');
                  }
               }
           });
