@@ -9,6 +9,8 @@ Route::get('/', function () {
 Route::get('/menu', function () {
     return view('shaqshouse.menu');
 });
+Route::get('/google/redirect', [LoginController::class, 'googleRedirect']);
+Route::get('/facebook/redirect', [LoginController::class, 'facebookRedirect']);
 
 Auth::routes();
 
@@ -20,6 +22,7 @@ Route::group(['prefix'=>'mobile'], function(){
     Route::get('/search', [App\Http\Controllers\MobileController::class, 'search'])->name('search');
     Route::post('/search-post', [App\Http\Controllers\MobileController::class, 'search_post'])->name('search_post');
 
+    //Auths
     Route::post('/sign-up', [App\Http\Controllers\MobileLoginController::class, 'sign_up_post'])->name('mobile.signup.post');
     Route::get('/sign-in', [App\Http\Controllers\MobileLoginController::class, 'sign_in'])->name('sign-in');
     Route::get('/sign-up', [App\Http\Controllers\MobileLoginController::class, 'sign_up'])->name('mobile.sign-up');
